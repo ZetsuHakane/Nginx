@@ -1,7 +1,5 @@
 docker run -d \
   --name nginx_custom \
-  --network nginx_network \
   -p 5555:80 \
-  -v ~/nginx-site/index.html:/usr/share/nginx/html/index.html:ro \
+  -v ~/nginx-site:/usr/share/nginx/html:ro \
   nginx
-
