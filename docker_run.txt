@@ -3,3 +3,4 @@ docker run -d \
   -p 5555:80 \
   -v ~/nginx-site:/usr/share/nginx/html:ro \
   nginx
+
